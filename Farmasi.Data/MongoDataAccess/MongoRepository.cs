@@ -41,7 +41,7 @@ namespace Farmasi.Data.MongoDataAccess
 
         public void Update(T model)
         {
-            var filter = Builders<T>.Filter.Eq(doc => doc.Id, model.Id);
+            var filter = Builders<T>.Filter.Eq(doc => doc.Uid, model.Uid);
             _mongoCollection.FindOneAndReplace(filter, model);
         }
 
@@ -81,7 +81,7 @@ namespace Farmasi.Data.MongoDataAccess
         }
         public virtual async Task UpdateAsync(T model)
         {
-            var filter = Builders<T>.Filter.Eq(doc => doc.Id, model.Id);
+            var filter = Builders<T>.Filter.Eq(doc => doc.Uid, model.Uid);
             await _mongoCollection.FindOneAndReplaceAsync(filter, model);
         }
         public Task DeleteAsync(Expression<Func<T, bool>> filterExpression)

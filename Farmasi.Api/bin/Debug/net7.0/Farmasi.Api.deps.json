@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v7.0": {
       "Farmasi.Api/1.0.0": {
         "dependencies": {
+          "Farmasi.Core": "1.0.0",
           "Farmasi.Data": "1.0.0",
           "Farmasi.Service": "1.0.0"
         },
@@ -136,6 +137,9 @@
         }
       },
       "Farmasi.Core/1.0.0": {
+        "dependencies": {
+          "MongoDB.Bson": "2.18.0"
+        },
         "runtime": {
           "Farmasi.Core.dll": {}
         }

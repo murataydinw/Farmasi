@@ -1,4 +1,5 @@
 ﻿using System;
+using Farmasi.Core.Domain.Categories;
 using Farmasi.Data.Categories;
 
 namespace Farmasi.Service.Categories
@@ -12,7 +13,18 @@ namespace Farmasi.Service.Categories
         }
         public object GetDetail(string name, string url)
         {
+            var data = new Category { Name = "Biskuvi", Url = "biskuvi" };
+
             return _category.Get(x => x.Url == url);
+        }
+        public object Save(string name, string url)
+        {
+            var data = new Category { Name = name, Url = url };
+
+          var result=  _category.Create(data);
+
+            return result;
+
         }
 
         public List<object> GetList(int skip, int take = 10)

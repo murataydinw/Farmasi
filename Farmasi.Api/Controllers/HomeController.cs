@@ -19,8 +19,9 @@ namespace Farmasi.Api.Controllers
         // GET: /<controller>/
         public IActionResult Index()
         {
-            var detail = _category.GetDetail("");
-            return View();
+            //var save = _category.Save("Viskyuv", "ekrem");
+            var detail = _category.GetDetail(url: "ekrem");
+            return Ok(detail);
         }
     }
 }

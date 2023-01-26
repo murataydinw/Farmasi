@@ -22,3 +22,15 @@
 \\Mac\Home\Desktop\Farmasi\Farmasi\Farmasi.Core\obj\Debug\net7.0\refint\Farmasi.Core.dll
 \\Mac\Home\Desktop\Farmasi\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.pdb
 \\Mac\Home\Desktop\Farmasi\Farmasi\Farmasi.Core\obj\Debug\net7.0\ref\Farmasi.Core.dll
+D:\Github\Farmasi\Farmasi.Core\bin\Debug\net7.0\Farmasi.Core.deps.json
+D:\Github\Farmasi\Farmasi.Core\bin\Debug\net7.0\Farmasi.Core.dll
+D:\Github\Farmasi\Farmasi.Core\bin\Debug\net7.0\Farmasi.Core.pdb
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.csproj.AssemblyReference.cache
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.GeneratedMSBuildEditorConfig.editorconfig
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.AssemblyInfoInputs.cache
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.AssemblyInfo.cs
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.csproj.CoreCompileInputs.cache
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.dll
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\refint\Farmasi.Core.dll
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\Farmasi.Core.pdb
+D:\Github\Farmasi\Farmasi.Core\obj\Debug\net7.0\ref\Farmasi.Core.dll

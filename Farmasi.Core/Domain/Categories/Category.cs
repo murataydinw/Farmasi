@@ -8,7 +8,7 @@ namespace Farmasi.Core.Domain.Categories
     {
         public string Name { get; set; }
         public string Url { get; set; }
-        IEnumerable<Product> Products { get; set; }
+       // IEnumerable<Product> Products { get; set; }
     }
 }
 

@@ -1,5 +1,6 @@
 ﻿using Farmasi.Data.Categories;
 using Farmasi.Data.Customers;
+using Farmasi.Data.MongoDataAccess;
 using Farmasi.Data.Products;
 using Farmasi.Service.Categories;
 using Microsoft.Extensions.Configuration;
@@ -13,7 +14,7 @@ var mongoConnectionString = builder.Configuration.GetConnectionString("MongoConn
 builder.Services.AddSingleton<ICategoryRepository, CategoryRepository>(x => new CategoryRepository(mongoConnectionString));
 builder.Services.AddSingleton<IProductRepository, ProductRepository>(x => new ProductRepository(mongoConnectionString));
 builder.Services.AddSingleton<ICustomerRepository, CustomerRepository>(x => new CustomerRepository(mongoConnectionString));
-
+builder.Services.AddTransient<IDbContext, MongoDbContext>();
 builder.Services.AddSingleton<ICategoryService, CategoryService>();
 // services.AddSingleton<ICacheManager, MemoryCacheManager>();
 var app = builder.Build();

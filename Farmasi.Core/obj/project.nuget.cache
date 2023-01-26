@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "3ouqBIpgl6iRr+M5YkpSrnuTK3M1/UYlCN/CfTS1DXFgnF57EhEiB0T/lzvxh/2TC0tFW6Kip87rlG+ooEhYWw==",
+  "dgSpecHash": "aR7MPS65ZrmOUowiBH14U1QokJYBbdT3Of2hbPyBnysyPKm8xDdVPxGUnsPKZBJjFJoGeaxF+WyoebvYKzN6+w==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Desktop\\Farmasi\\Farmasi\\Farmasi.Core\\Farmasi.Core.csproj",
-  "expectedPackageFiles": [],
+  "projectFilePath": "D:\\Github\\Farmasi\\Farmasi.Core\\Farmasi.Core.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\murataydin\\.nuget\\packages\\mongodb.bson\\2.18.0\\mongodb.bson.2.18.0.nupkg.sha512",
+    "C:\\Users\\murataydin\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\5.0.0\\system.runtime.compilerservices.unsafe.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }

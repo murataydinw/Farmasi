@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LxXXSI91P0+e4BtnXKXA0+ITdYxGqpOH8UbyznPdXFAdYLSWz4KqX8DpLsw/e71NK7bXpqKJ+jbdRvvJ9NIEmA==",
+  "dgSpecHash": "1U0v2gdUZ21t+peGKZ42VEkJG5+HM4ydQT7hUCf48NlEPn8Ib3WSqxZGZyY9RIO1B5nCjdT9LsHWXa/2DvLFwA==",
   "success": true,
-  "projectFilePath": "\\\\Mac\\Home\\Desktop\\Farmasi\\Farmasi\\Farmasi.Api\\Farmasi.Api.csproj",
+  "projectFilePath": "D:\\Github\\Farmasi\\Farmasi.Api\\Farmasi.Api.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\murataydin\\.nuget\\packages\\dnsclient\\1.6.1\\dnsclient.1.6.1.nupkg.sha512",
     "C:\\Users\\murataydin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\2.0.0\\microsoft.extensions.logging.abstractions.2.0.0.nupkg.sha512",
