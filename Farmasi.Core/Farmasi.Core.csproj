@@ -1,0 +1,23 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Domain\" />
+    <None Remove="Domain\Customers\" />
+    <None Remove="Domain\Common\" />
+    <None Remove="Domain\Produtcs\" />
+    <None Remove="Domain\Categories\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Domain\" />
+    <Folder Include="Domain\Customers\" />
+    <Folder Include="Domain\Common\" />
+    <Folder Include="Domain\Produtcs\" />
+    <Folder Include="Domain\Categories\" />
+  </ItemGroup>
+</Project>
