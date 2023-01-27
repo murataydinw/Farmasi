@@ -1,9 +1,12 @@
-﻿namespace Farmasi.Service.Categories
+﻿using Farmasi.Service.Categories.Dto;
+using Farmasi.Service.Categories.Input;
+
+namespace Farmasi.Service.Categories
 {
     public interface ICategoryService
     {
-        object GetDetail(string name="", string url="");
-        object Save(string name, string url);
-        List<object> GetList(int skip, int take = 10);
+        CategoryDto GetDetail(CategoryDetailParameter input);
+        CategoryDto Save(CategoryDto input);
+        List<CategoryDto> GetList(CategoryListParameter input);
     }
 }

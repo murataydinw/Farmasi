@@ -10,7 +10,7 @@ namespace Farmasi.Core.Domain.Produtcs
         public string Name { get; set; }
         public string Url { get; set; }
         public decimal Price { get; set; }
-        public int? CategoryId { get; set; }
+        public Guid? CategoryId { get; set; }
         //public Category Category { get; set; }
         public bool Deleted { get; set; }
         public DateTime? DeletedAt { get; set; }

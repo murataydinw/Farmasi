@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Github\\Farmasi\\Farmasi.Data\\Farmasi.Data.csproj": {}
+    "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Data/Farmasi.Data.csproj": {}
   },
   "projects": {
-    "D:\\Github\\Farmasi\\Farmasi.Core\\Farmasi.Core.csproj": {
+    "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Core/Farmasi.Core.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\Farmasi\\Farmasi.Core\\Farmasi.Core.csproj",
+        "projectUniqueName": "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Core/Farmasi.Core.csproj",
         "projectName": "Farmasi.Core",
-        "projectPath": "D:\\Github\\Farmasi\\Farmasi.Core\\Farmasi.Core.csproj",
-        "packagesPath": "C:\\Users\\murataydin\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\Farmasi\\Farmasi.Core\\obj\\",
+        "projectPath": "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Core/Farmasi.Core.csproj",
+        "packagesPath": "/Users/murataydin/.nuget/packages/",
+        "outputPath": "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Core/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\murataydin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/murataydin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,9 +38,29 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "dependencies": {
+            "Microsoft.AspNetCore.Http": {
+              "target": "Package",
+              "version": "[2.2.2, )"
+            },
+            "Microsoft.Extensions.Caching.Memory": {
+              "target": "Package",
+              "version": "[7.0.0, )"
+            },
             "MongoDB.Bson": {
               "target": "Package",
               "version": "[2.18.0, )"
+            },
+            "Nancy": {
+              "target": "Package",
+              "version": "[2.0.0, )"
+            },
+            "Nancy.Serialization.JsonNet": {
+              "target": "Package",
+              "version": "[1.4.1, )"
+            },
+            "Newtonsoft.Json": {
+              "target": "Package",
+              "version": "[13.0.2, )"
             }
           },
           "imports": [
@@ -61,36 +79,34 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     },
-    "D:\\Github\\Farmasi\\Farmasi.Data\\Farmasi.Data.csproj": {
+    "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Data/Farmasi.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Github\\Farmasi\\Farmasi.Data\\Farmasi.Data.csproj",
+        "projectUniqueName": "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Data/Farmasi.Data.csproj",
         "projectName": "Farmasi.Data",
-        "projectPath": "D:\\Github\\Farmasi\\Farmasi.Data\\Farmasi.Data.csproj",
-        "packagesPath": "C:\\Users\\murataydin\\.nuget\\packages\\",
-        "outputPath": "D:\\Github\\Farmasi\\Farmasi.Data\\obj\\",
+        "projectPath": "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Data/Farmasi.Data.csproj",
+        "packagesPath": "/Users/murataydin/.nuget/packages/",
+        "outputPath": "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Data/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\murataydin\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/murataydin/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net7.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "D:\\Github\\Farmasi\\Farmasi.Core\\Farmasi.Core.csproj": {
-                "projectPath": "D:\\Github\\Farmasi\\Farmasi.Core\\Farmasi.Core.csproj"
+              "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Core/Farmasi.Core.csproj": {
+                "projectPath": "/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Core/Farmasi.Core.csproj"
               }
             }
           }
@@ -126,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/7.0.102/RuntimeIdentifierGraph.json"
         }
       }
     }

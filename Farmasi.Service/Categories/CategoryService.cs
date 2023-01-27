@@ -1,6 +1,9 @@
 ﻿using System;
+using System.Xml.Linq;
 using Farmasi.Core.Domain.Categories;
 using Farmasi.Data.Categories;
+using Farmasi.Service.Categories.Dto;
+using Farmasi.Service.Categories.Input;
 
 namespace Farmasi.Service.Categories
 {
@@ -10,26 +13,31 @@ namespace Farmasi.Service.Categories
         public CategoryService(ICategoryRepository category)
         {
             _category = category;
-        }
-        public object GetDetail(string name, string url)
+        }       
+
+        public CategoryDto GetDetail(CategoryDetailParameter input)
         {
-            var data = new Category { Name = "Biskuvi", Url = "biskuvi" };
-
-            return _category.Get(x => x.Url == url);
-        }
-        public object Save(string name, string url)
-        {
-            var data = new Category { Name = name, Url = url };
-
-          var result=  _category.Create(data);
-
-            return result;
-
+            var model = _category.Get(x => x.Url == input.Url);
+            return model == null ? new CategoryDto() : new CategoryDto
+            {
+                Uid = model.Uid,
+                Name = model.Name,
+                Url = model.Url
+            };
         }
 
-        public List<object> GetList(int skip, int take = 10)
+        public CategoryDto Save(CategoryDto input)
         {
-            throw new NotImplementedException();
+            var data = new Category { Name = input.Name, Url = input.Url };
+            _category.Create(data);
+            input.Uid = data.Uid;
+            return input;
+        }
+
+        public List<CategoryDto> GetList(CategoryListParameter input)
+        {
+            return _category.GetList(x => true).Skip(input.Skip).Take(input.Take)
+                .Select(x => new CategoryDto { Name = x.Name, Url = x.Url, Uid = x.Uid }).ToList();
         }
     }
 }

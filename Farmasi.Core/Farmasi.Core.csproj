@@ -12,6 +12,12 @@
     <None Remove="Domain\Common\" />
     <None Remove="Domain\Produtcs\" />
     <None Remove="Domain\Categories\" />
+    <None Remove="Helper\" />
+    <None Remove="Newtonsoft.Json" />
+    <None Remove="Nancy" />
+    <None Remove="Nancy.Serialization.JsonNet" />
+    <None Remove="Microsoft.AspNetCore.Http" />
+    <None Remove="Microsoft.Extensions.Caching.Memory" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
@@ -19,8 +25,14 @@
     <Folder Include="Domain\Common\" />
     <Folder Include="Domain\Produtcs\" />
     <Folder Include="Domain\Categories\" />
+    <Folder Include="Helper\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="MongoDB.Bson" Version="2.18.0" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.2" />
+    <PackageReference Include="Nancy" Version="2.0.0" />
+    <PackageReference Include="Nancy.Serialization.JsonNet" Version="1.4.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
   </ItemGroup>
 </Project>

@@ -8,11 +8,27 @@
 
   <ItemGroup>
     <None Remove="Categories\" />
+    <None Remove="Products\" />
+    <None Remove="Products\Dto\" />
+    <None Remove="Products\Input\" />
+    <None Remove="LinqKit" />
+    <None Remove="Categories\Dto\" />
+    <None Remove="Categories\Input\" />
+    <None Remove="Baskets\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Categories\" />
+    <Folder Include="Products\" />
+    <Folder Include="Products\Dto\" />
+    <Folder Include="Products\Input\" />
+    <Folder Include="Categories\Dto\" />
+    <Folder Include="Categories\Input\" />
+    <Folder Include="Baskets\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Farmasi.Data\Farmasi.Data.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="LinqKit" Version="1.2.3" />
   </ItemGroup>
 </Project>
