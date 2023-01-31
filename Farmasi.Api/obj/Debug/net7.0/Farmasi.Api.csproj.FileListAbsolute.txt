@@ -164,3 +164,6 @@ D:/Github/Farmasi/Farmasi.Api/obj/Debug/net7.0/ref/Farmasi.Api.dll
 /Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/bin/Debug/net7.0/Nancy.dll
 /Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/bin/Debug/net7.0/Nancy.Serialization.JsonNet.dll
 /Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/bin/Debug/net7.0/Newtonsoft.Json.dll
+/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/bin/Debug/net7.0/Microsoft.Extensions.Caching.StackExchangeRedis.dll
+/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/bin/Debug/net7.0/Pipelines.Sockets.Unofficial.dll
+/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/bin/Debug/net7.0/StackExchange.Redis.dll

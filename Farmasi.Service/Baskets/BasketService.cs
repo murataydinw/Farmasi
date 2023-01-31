@@ -12,28 +12,26 @@ namespace Farmasi.Service.Baskets
         {
             _cacheManager = cacheManager;
         }
-     
 
-        public ProductDto AddBasket(string sessionId, ProductDto product)
+        public List<ProductDto> AddBasket(string sessionId, ProductDto product)
         {
             string key = $"{sessionId}";
             var cacheKey = new CacheKey(key, cacheTime: 1, 1, CacheTimePeriod.Month);
-            var result = _cacheManager.GetOrCreate(cacheKey, () =>
-            {
-                
-                return product;
-            });
+            var result = ListBasket(key);
+            result.Add(product);
+            _cacheManager.SetAsync(cacheKey, result);
             return result;
         }
-        public ProductDto RemoveBasket(string sessionId, ProductDto product)
+        public List<ProductDto> RemoveBasket(string sessionId, Guid productId)
         {
             string key = $"{sessionId}";
             var cacheKey = new CacheKey(key, cacheTime: 1, 1, CacheTimePeriod.Month);
-            var result = _cacheManager.GetOrCreate(cacheKey, () =>
+            var result = _cacheManager.GetOrCreate<List<ProductDto>>(cacheKey, () =>
             {
-               
-                return product;
+                return new List<ProductDto>();
             });
+            result = result.Where(x => x.Id != productId).ToList();
+            _cacheManager.SetAsync(cacheKey, result);
             return result;
         }
 
@@ -43,7 +41,6 @@ namespace Farmasi.Service.Baskets
             var cacheKey = new CacheKey(key, cacheTime: 1, 1, CacheTimePeriod.Month);
             var result = _cacheManager.GetOrCreate<List<ProductDto>>(cacheKey, () =>
             {
-                
                 return new List<ProductDto>();
             });
             return result;

@@ -18,7 +18,7 @@ namespace Farmasi.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class CategoryController : ControllerBase
+    public class CategoryController : BaseApiController
     {
         private readonly ICategoryService _category;
         private readonly IProductService _product;

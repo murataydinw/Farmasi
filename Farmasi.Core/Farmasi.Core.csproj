@@ -18,6 +18,7 @@
     <None Remove="Nancy.Serialization.JsonNet" />
     <None Remove="Microsoft.AspNetCore.Http" />
     <None Remove="Microsoft.Extensions.Caching.Memory" />
+    <None Remove="Microsoft.AspNetCore.Mvc.Core" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Domain\" />
@@ -34,5 +35,6 @@
     <PackageReference Include="Nancy.Serialization.JsonNet" Version="1.4.1" />
     <PackageReference Include="Microsoft.AspNetCore.Http" Version="2.2.2" />
     <PackageReference Include="Microsoft.Extensions.Caching.Memory" Version="7.0.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.Core" Version="2.2.5" />
   </ItemGroup>
 </Project>

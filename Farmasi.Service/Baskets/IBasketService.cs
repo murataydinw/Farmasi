@@ -6,8 +6,8 @@ namespace Farmasi.Service.Baskets
 {
     public interface IBasketService
     {
-        ProductDto AddBasket(string sessionId, ProductDto product);
-        ProductDto RemoveBasket(string sessionId, ProductDto product);
+        List<ProductDto> AddBasket(string sessionId, ProductDto product);
+        List<ProductDto> RemoveBasket(string sessionId, Guid productId);
         List<ProductDto> ListBasket(string sessionId);
     }
 }

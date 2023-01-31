@@ -20,9 +20,10 @@ namespace Farmasi.Service.Categories
             var model = _category.Get(x => x.Url == input.Url);
             return model == null ? new CategoryDto() : new CategoryDto
             {
-                Uid = model.Uid,
+                Id = model.Id,
                 Name = model.Name,
                 Url = model.Url
+
             };
         }
 
@@ -30,14 +31,14 @@ namespace Farmasi.Service.Categories
         {
             var data = new Category { Name = input.Name, Url = input.Url };
             _category.Create(data);
-            input.Uid = data.Uid;
+            input.Id = data.Id;
             return input;
         }
 
         public List<CategoryDto> GetList(CategoryListParameter input)
         {
             return _category.GetList(x => true).Skip(input.Skip).Take(input.Take)
-                .Select(x => new CategoryDto { Name = x.Name, Url = x.Url, Uid = x.Uid }).ToList();
+                .Select(x => new CategoryDto { Name = x.Name, Url = x.Url, Id = x.Id }).ToList();
         }
     }
 }

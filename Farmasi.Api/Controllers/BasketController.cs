@@ -3,7 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Farmasi.Core.Domain.Categories;
+using Farmasi.Core.Domain.Produtcs;
+using Farmasi.Service.Baskets;
 using Farmasi.Service.Categories.Input;
+using Farmasi.Service.Products.Dto;
 using Microsoft.AspNetCore.Mvc;
 using Swashbuckle.AspNetCore.Annotations;
 
@@ -13,26 +16,36 @@ namespace Farmasi.Api.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class BasketController : ControllerBase
+    public class BasketController : BaseApiController
     {
-
+        private readonly IBasketService _basketService;
+        public BasketController(IBasketService basketService)
+        {
+            _basketService = basketService;
+        }
         [HttpPost("AddProductToBasket")]
         [SwaggerOperation(Summary = "Basket", Description = "AddProductToBasket")]
-        public IActionResult Add(Guid Uid)
-        {           
-            return Ok();
+        public IActionResult Add(ProductDto product)
+        {
+            var cartId = HttpContext.Session.GetString("cartId");
+            var result = _basketService.AddBasket(cartId, product);
+            return Ok(result);
         }
         [HttpDelete("RemoveItemFromBasket")]
         [SwaggerOperation(Summary = "Basket", Description = "RemoveItemFromBasket")]
-        public IActionResult Remove(Guid Uid)
+        public IActionResult Remove(Guid productId)
         {
-            return Ok();
+            var cartId = HttpContext.Session.GetString("cartId");
+            var result = _basketService.RemoveBasket(cartId, productId);
+            return Ok(result);
         }
         [HttpPost("GetBaset")]
         [SwaggerOperation(Summary = "Basket", Description = "Get Baset")]
         public IActionResult List()
         {
-            return Ok();
+            var cartId = HttpContext.Session.GetString("cartId");
+            var result = _basketService.ListBasket(cartId);
+            return Ok(result);
         }
     }
 }

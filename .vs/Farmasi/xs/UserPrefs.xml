@@ -1,45 +1,36 @@
 ﻿<Properties StartupConfiguration="{D901B655-805B-47AC-AB98-456A3C56A2FB}|https">
-  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.Farmasi.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
-  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MultiItemStartupConfigurations />
-  <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore>
-      <Breakpoint file="/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/Controllers/HomeController.cs" relfile="Farmasi.Api/Controllers/HomeController.cs" line="22" column="1" />
-    </BreakpointStore>
-  </MonoDevelop.Ide.DebuggingService.Breakpoints>
-  <MonoDevelop.Ide.Workbench ActiveDocument="Farmasi.Api/Controllers/HomeController.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Farmasi.Service/Products/Dto/ProductDto.cs">
     <Files>
-      <File FileName="Farmasi.Api/Program.cs" Line="24" Column="18" />
-      <File FileName="Farmasi.Api/Controllers/HomeController.cs" Line="22" Column="50" />
-      <File FileName="Farmasi.Service/Categories/ICategoryService.cs" Line="5" Column="39" />
-      <File FileName="Farmasi.Api/Properties/launchSettings.json" Line="15" Column="31" />
-      <File FileName="Farmasi.Data/Categories/CategoryRepository.cs" Line="14" Column="1" />
-      <File FileName="Farmasi.Data/MongoDataAccess/MongoDbContext.cs" Line="16" Column="32" />
-      <File FileName="Farmasi.Data/MongoDataAccess/IDbContext.cs" Line="12" Column="52" />
-      <File FileName="Farmasi.Data/MongoDataAccess/IMongoRepository.cs" Line="1" Column="1" />
+      <File FileName="Farmasi.Service/Baskets/IBasketService.cs" Line="11" Column="55" />
+      <File FileName="Farmasi.Service/Baskets/BasketService.cs" Line="54" Column="1" />
+      <File FileName="Farmasi.Service/Products/Dto/ProductDto.cs" Line="10" Column="43" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
           <Node name="Farmasi" expanded="True">
-            <Node name="Farmasi.Api" expanded="True">
-              <Node name="Controllers" expanded="True" />
-              <Node name="Properties" expanded="True" />
-            </Node>
-            <Node name="Farmasi.Core" expanded="True" />
-            <Node name="Farmasi.Data" expanded="True">
-              <Node name="Categories" expanded="True" />
-              <Node name="MongoDataAccess" expanded="True">
-                <Node name="MongoDbContext.cs" selected="True" />
-              </Node>
-            </Node>
             <Node name="Farmasi.Service" expanded="True">
-              <Node name="Categories" expanded="True" />
+              <Node name="Baskets" expanded="True" />
+              <Node name="Products" expanded="True">
+                <Node name="Dto" expanded="True">
+                  <Node name="ProductDto.cs" selected="True" />
+                </Node>
+              </Node>
             </Node>
           </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Farmasi.Api PreferredExecutionTarget="/Applications/Google Chrome.app" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/Controllers/HomeController.cs" relfile="Farmasi.Api/Controllers/HomeController.cs" line="35" column="1" />
+      <Breakpoint file="/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Api/Controllers/ProductController.cs" relfile="Farmasi.Api/Controllers/ProductController.cs" line="46" column="1" />
+      <Breakpoint file="/Users/murataydin/Desktop/Farmasi/Farmasi/Farmasi.Service/Products/ProductService.cs" relfile="Farmasi.Service/Products/ProductService.cs" line="42" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>

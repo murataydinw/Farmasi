@@ -1,10 +1,12 @@
 ﻿using System;
+using Farmasi.Core.Domain;
+
 namespace Farmasi.Service.Categories.Dto
 {
-	public class CategoryDto
-	{
-		public Guid? Uid { get; set; }
-		public string Name { get; set; }
+    public class CategoryDto : BaseDto
+    {
+
+        public string Name { get; set; }
         public string Url { get; set; }
     }
 }

@@ -5,10 +5,10 @@ namespace Farmasi.Core.Helper
 {
     public static class SessionHelper
     {
-        //public static void SetSession(this ISession iSession, string key, string sessionString)
-        //{
-        //    iSession.SetString(key, sessionString);
-        //}
+        public static void SetSession(this ISession iSession, string key, string sessionString)
+        {
+            iSession.SetString(key, sessionString);
+        }
 
         //public static void SetSession<T>(this ISession iSession, string key, T model)
         //{
@@ -16,11 +16,11 @@ namespace Farmasi.Core.Helper
         //    iSession.SetString(key, modelJson);
         //}
 
-        //public static string GetSession(this ISession iSession, string key)
-        //{
-        //    var sessionString = iSession.GetString(key);
-        //    return sessionString;
-        //}
+        public static string GetSession(this ISession iSession, string key)
+        {
+            var sessionString = iSession.GetString(key);
+            return sessionString;
+        }
 
         //public static T GetSession<T>(this ISession iSession, string key)
         //{
